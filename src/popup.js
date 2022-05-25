@@ -11,7 +11,8 @@ changeColor.addEventListener("click", async () => {
 
     chrome.scripting.executeScript({
         target: { tabId: tab.id },
-        function: setPageBackgroundColor,
+        //! function: setPageBackgroundColor,
+        function: randomBackgroundColor,
     });
 });
 
@@ -20,5 +21,40 @@ changeColor.addEventListener("click", async () => {
 function setPageBackgroundColor() {
     chrome.storage.sync.get("color", ({ color }) => {
         document.body.style.backgroundColor = color;
+    });
+}
+
+async function randomBackgroundColor() {
+    // while (true) {
+    //     document.body.style.backgroundColor = color;
+    //     await wait(500);
+    // }
+    
+    // console.log("init");
+    // for (let i = 0; i < 255; i++) {
+    //     console.log("run loop#" + i);
+
+    //     const red = Math.floor(Math.random() * 256);
+    //     const green = Math.floor(Math.random() * 256);
+    //     const blue = Math.floor(Math.random() * 256);
+
+    //     // document.body.style.backgroundColor = "rgb(${red}, ${green}, ${blue})";
+    //     document.body.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
+    //     // await wait(500);
+    //     console.log("end loop#" + i)
+    // }
+
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+
+    document.body.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
+}
+
+function wait(ms) {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve();
+        }, ms);
     });
 }
