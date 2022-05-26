@@ -1,1 +1,1 @@
-var CHANGE_COLOR = false;
+var RAINBOW = false;
