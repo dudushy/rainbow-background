@@ -1,4 +1,4 @@
-# :rainbow: Rainbow Background
+# :rainbow: Rainbow Body
 
 > DISCLAIMER: This is one of my first experiences coding an extension, it is simple and immature.
 
