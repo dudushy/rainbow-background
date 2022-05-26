@@ -7,15 +7,15 @@ changeColor.addEventListener("click", async () => {
     });
 });
 
-function randomBackgroundColor() {
-    console.log("click");
+// function randomBackgroundColor() {
+//     console.log("click");
     
-    const red = Math.floor(Math.random() * 256);
-    const green = Math.floor(Math.random() * 256);
-    const blue = Math.floor(Math.random() * 256);
+//     const red = Math.floor(Math.random() * 256);
+//     const green = Math.floor(Math.random() * 256);
+//     const blue = Math.floor(Math.random() * 256);
 
-    document.body.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
-}
+//     document.body.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
+// }
 
 function rainbowBody() {
     // console.log("click");
