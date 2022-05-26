@@ -20,13 +20,18 @@ function randomBackgroundColor() {
 function rainbowBackgroundColor() {
     console.log("click");
 
-    var body = document.body;
-    body.classList.add("rainbow-background");
+    const body = document.body;
+    if (CHANGE_COLOR) {
+        body.classList.remove("rainbow-background");
+        CHANGE_COLOR = false;
+
+        console.log("rainbow-background [OFF]");
+    } else {
+        body.classList.add("rainbow-background");
+        CHANGE_COLOR = true;
+
+        console.log("rainbow-background [ON]");
+    }
+    
     console.log(body);
-
-
-    // var link = document.createElement("link");
-    // link.setAttribute("rel", "stylesheet");
-    // link.setAttribute("href", "src/inject.css");
-    // document.head.appendChild(link);
 }
