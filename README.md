@@ -16,25 +16,25 @@
 ## How to install:
 1. Download the extension via [GitHub](#) or add it on [Chrome Web Store](#).
 
-1. Click on the :jigsaw: (top right corner) and verify if `Rainbow Background` shows.
+1. Click on the :jigsaw: (top right corner) and verify if `Rainbow Background` shows.<br>
 ![jigsaw](img/jigsaw.png)
 
-1. Click on the :pushpin: to fix the extension.
+1. Click on the :pushpin: to fix the extension.<br>
 ![pin](img/pin.png)
 
-You're done! :tada:
+_You're done! :tada:_
 
 ---
 ## How to use:
 1. Click on the the icon ![icon](src/images/get_started32.png)
 
-1. It should popup a purple button.
+1. It should popup a purple button.<br>
 ![popup](img/popup.png)
 
-1. Click on the button to toggle the rainbow effect.
+1. Click on the button to toggle the rainbow effect.<br>
 ![button](img/button.png)
 
-You're done! :tada:
+_You're done! :tada:_
 
 ---
 ## How it works:
