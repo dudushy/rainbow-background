@@ -1,49 +1,15 @@
-// Initialize butotn with users's prefered color
-let changeColor = document.getElementById("changeColor");
-
-chrome.storage.sync.get("color", ({ color }) => {
-    changeColor.style.backgroundColor = color;
-});
-
-// When the button is clicked, inject setPageBackgroundColor into current page
 changeColor.addEventListener("click", async () => {
     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
     chrome.scripting.executeScript({
         target: { tabId: tab.id },
-        //! function: setPageBackgroundColor,
-        function: randomBackgroundColor,
+        function: rainbowBackgroundColor,
     });
 });
 
-// The body of this function will be execuetd as a content script inside the
-// current page
-function setPageBackgroundColor() {
-    chrome.storage.sync.get("color", ({ color }) => {
-        document.body.style.backgroundColor = color;
-    });
-}
-
-async function randomBackgroundColor() {
-    // while (true) {
-    //     document.body.style.backgroundColor = color;
-    //     await wait(500);
-    // }
+function randomBackgroundColor() {
+    console.log("click");
     
-    // console.log("init");
-    // for (let i = 0; i < 255; i++) {
-    //     console.log("run loop#" + i);
-
-    //     const red = Math.floor(Math.random() * 256);
-    //     const green = Math.floor(Math.random() * 256);
-    //     const blue = Math.floor(Math.random() * 256);
-
-    //     // document.body.style.backgroundColor = "rgb(${red}, ${green}, ${blue})";
-    //     document.body.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
-    //     // await wait(500);
-    //     console.log("end loop#" + i)
-    // }
-
     const red = Math.floor(Math.random() * 256);
     const green = Math.floor(Math.random() * 256);
     const blue = Math.floor(Math.random() * 256);
@@ -51,10 +17,16 @@ async function randomBackgroundColor() {
     document.body.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
 }
 
-function wait(ms) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve();
-        }, ms);
-    });
+function rainbowBackgroundColor() {
+    console.log("click");
+
+    var body = document.body;
+    body.classList.add("rainbow-background");
+    console.log(body);
+
+
+    // var link = document.createElement("link");
+    // link.setAttribute("rel", "stylesheet");
+    // link.setAttribute("href", "src/inject.css");
+    // document.head.appendChild(link);
 }
