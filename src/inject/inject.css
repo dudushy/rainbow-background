@@ -1,107 +1,66 @@
 .rainbow-body{
-    animation: rainbow-background 2.5s linear;
-    animation-iteration-count: infinite;
-
-    animation: rainbow-text 2.5s linear;
+    animation: rainbow-body 30s linear;
     animation-iteration-count: infinite;
 }
 
-@keyframes rainbow-background{
+@keyframes rainbow-body{
     100%,0%{
         background-color: #ff0000;
-    }
-
-    8%{
-        background-color: #ff7f00;
-    }
-
-    16%{
-        background-color: #ffff00;
-    }
-
-    25%{
-        background-color: #7fff00;
-    }
-
-    33%{
-        background-color: #00ff00;
-    }
-
-    41%{
-        background-color: #00ff7f;
-    }
-    
-    50%{
-        background-color: #00ffff;
-    }
-
-    58%{
-        background-color: #007fff;
-    }
-
-    66%{
-        background-color: #0000ff;
-    }
-
-    75%{
-        background-color: #7f00ff;
-    }
-
-    83%{
-        background-color: #ff00ff;
-    }
-
-    91%{
-        background-color: #ff007f;
-    }
-}
-
-@keyframes rainbow-text{
-    100%,0%{
         color: #ff007f;
     }
 
     8%{
+        background-color: #ff7f00;
         color: #ff00ff;
     }
 
     16%{
+        background-color: #ffff00;
         color: #7f00ff;
     }
 
     25%{
+        background-color: #7fff00;
         color: #0000ff;
     }
 
     33%{
+        background-color: #00ff00;
         color: #007fff;
     }
 
     41%{
+        background-color: #00ff7f;
         color: #00ffff;
     }
-
+    
     50%{
+        background-color: #00ffff;
         color: #00ff7f;
     }
 
     58%{
+        background-color: #007fff;
         color: #00ff00;
     }
 
     66%{
+        background-color: #0000ff;
         color: #7fff00;
     }
 
     75%{
+        background-color: #7f00ff;
         color: #ffff00;
     }
 
     83%{
+        background-color: #ff00ff;
         color: #ff7f00;
     }
-    
+
     91%{
+        background-color: #ff007f;
         color: #ff0000;
     }
 }
