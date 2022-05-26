@@ -16,6 +16,15 @@
 ## How to install:
 1. Download the extension via [GitHub](#) or add it on [Chrome Web Store](#).
 
+1. Click on the :jigsaw: (top right corner).<br>
+![jigsaw](img/jigsaw.png)
+
+1. In the list below, locate and click on `Manage Extensions`.<br>
+![manage_ext](img/manage_ext.png)
+
+1. Click on the `Load unpacked` (top left corner) and select `rainbow-body.zip`.<br>
+![load_unpacked](img/load_unpacked.png)
+
 1. Click on the :jigsaw: (top right corner) and verify if `Rainbow Background` shows.<br>
 ![jigsaw](img/jigsaw.png)
 
