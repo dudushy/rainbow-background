@@ -44,6 +44,8 @@ TO BE DEVELOPED
 
 - [ ] Change not only `body` color.
 
-- [ ] Finish `README.md`
+- [ ] Create icons.
+
+- [ ] Finish `README.md`.
 
 - [ ] Publish extension on [Chrome Web Store](https://chrome.google.com/webstore/category/extensions).
