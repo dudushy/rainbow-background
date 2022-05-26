@@ -3,7 +3,7 @@ changeColor.addEventListener("click", async () => {
 
     chrome.scripting.executeScript({
         target: { tabId: tab.id },
-        function: rainbowBackgroundColor,
+        function: rainbowBody,
     });
 });
 
@@ -17,20 +17,20 @@ function randomBackgroundColor() {
     document.body.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
 }
 
-function rainbowBackgroundColor() {
-    console.log("click");
+function rainbowBody() {
+    // console.log("click");
 
     const body = document.body;
-    if (CHANGE_COLOR) {
-        body.classList.remove("rainbow-background");
-        CHANGE_COLOR = false;
+    if (RAINBOW) {
+        body.classList.remove("rainbow-body");
+        RAINBOW = false;
 
-        console.log("rainbow-background [OFF]");
+        console.log("rainbow [OFF]");
     } else {
-        body.classList.add("rainbow-background");
-        CHANGE_COLOR = true;
+        body.classList.add("rainbow-body");
+        RAINBOW = true;
 
-        console.log("rainbow-background [ON]");
+        console.log("rainbow [ON]");
     }
     
     console.log(body);
