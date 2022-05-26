@@ -1,4 +1,6 @@
 button {
+    color: purple;
+    background-color: purple;
     height: 30px;
     width: 30px;
     outline: none;
