@@ -1,4 +1,4 @@
-# Rainbow Background
+# :rainbow: Rainbow Background
 
 > DISCLAIMER: This is one of my first experiences coding an extension, it is simple and immature.
 
