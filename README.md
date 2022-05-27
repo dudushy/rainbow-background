@@ -24,7 +24,7 @@
 1. In the list below, locate and click on `Manage Extensions`.<br>
 ![manage_ext](img/manage_ext.png)
 
-1. Click on the `Load unpacked` (top left corner) and select `src` folder from `rainbow-body.zip`.<br>
+1. Click on the `Load unpacked` (top left corner) and select `rainbow-body` folder from `rainbow-body.zip`.<br>
 ![load_unpacked](img/load_unpacked.png)
 
 1. Click on the :jigsaw: (top right corner) and verify if `Rainbow Background` shows.<br>
