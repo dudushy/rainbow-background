@@ -55,11 +55,11 @@ TO BE DEVELOPED
 ## To Do:
 - [ ] Change text color with opposite color of rainbow (negative).
 
-- [ ] Make actual `options` (random color, rainbow text).
+- [ ] Make actual `options` (random color, rainbow text, rainbow speed).
 
-- [ ] Change not only `body` color.
+- [x] ~Change not only `body` color.~
 
-- [ ] Create icons.
+- [x] ~Create icons.~
 
 - [ ] Finish `README.md`.
 
