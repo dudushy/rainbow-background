@@ -37,7 +37,7 @@ _You're done! :tada:_
 
 ---
 ## How to use:
-1. Click on the the icon ![icon](src/images/rainbow-body32.png)
+1. Click on the the icon ![icon](rainbow-body/images/rainbow-body32.png)
 
 1. It should popup a rainbow button.<br>
 ![popup](img/popup.png)
