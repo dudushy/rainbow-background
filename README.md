@@ -14,7 +14,7 @@
 
 ---
 ## How to install:
-1. Download the extension via [GitHub](https://github.com/dudushy/rainbow-body/releases) or add it on [Chrome Web Store](# Not ready).
+1. Download the extension via [GitHub](https://github.com/dudushy/rainbow-body/releases) or add it on [Chrome Web Store](# "Not ready").
 
 1. Extract `rainbow-body.zip` content into desired folder.
 
