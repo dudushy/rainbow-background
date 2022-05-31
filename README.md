@@ -54,13 +54,8 @@ TO BE DEVELOPED
 ---
 ## To Do:
 - [ ] Change text color with opposite color of rainbow (negative).
-
 - [ ] Make actual `options` (random color, rainbow text, rainbow speed).
-
 - [x] ~Change not only `body` color.~
-
 - [x] ~Create icons.~
-
 - [ ] Finish `README.md`.
-
 - [ ] Publish extension on [Chrome Web Store](https://chrome.google.com/webstore/category/extensions).
